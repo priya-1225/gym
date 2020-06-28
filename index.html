@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness world</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS Reset*/
+    body {
+        font-family: 'Piedra', cursive;
+        margin: 9px;
+        padding: 0px;
+        background: url('pictures/log.jpg');
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline block;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+    }
+
+    .mid {
+         display: block; 
+        /* border: 2px solid blue; */
+        width: 50%;
+        margin: 20px 50px 400px 400px;
+
+    }
+
+    .right {
+       /* border: 2px solid rgb(4, 80, 26);*/
+        display: inline block;
+        position: absolute;
+        right: 47px;
+        top: 26px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: violet;
+        text-decoration: underline;
+
+    }
+
+    .left img {
+        width: 126px;
+
+    }
+
+    .let div {
+        text-align: center;
+    }
+
+    .btn {
+        font-family: 'Piedra', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        /* border: 2px solid grey; */
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: grey;
+
+    }
+    .con button{
+        display: block;
+        margin: 17px 177px;
+        width: 23%;
+    }
+
+    .con {
+        border: 2px solid white; 
+        margin: -344px 217px 67px 179px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Piedra', cursive;
+      text-align: center;
+      display: block;
+      width: 399px;
+      padding: 13px;
+      /* border: 2px solid black; */
+      margin: 13px auto;
+      
+    }
+    .con h1{
+        text-align: center;
+
+    }
+    .form-group button{
+        display: block;
+        width: 23%;
+        margin: 17px 175px;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left for logo-->
+        <div class="left">
+            <ul>
+                <img src="pictures/logo.jpg" alt="">
+                <div>fitness world</div>
+            </ul>
+        </div>
+        <!--mid for nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness meter</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--right for button-->
+        <div class="right">
+            <button class="btn">email us</button>
+            <button class="btn">call us</button>
+        </div>
+    </header>
+    <div class="con">
+        <h1>Join today</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone number">
+               </div>
+               <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
